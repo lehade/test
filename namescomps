@@ -1,0 +1,38 @@
+import java.io.*;
+
+public class Solution {
+    public static void main(String[] args) throws Exception {
+        //напишите тут ваш код
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+        String ab = reader.readLine();
+        String bb = reader.readLine();
+//        String cb = reader.readLine();
+//        String db = reader.readLine();
+
+//        int a = Integer.parseInt(ab);
+//        int b = Integer.parseInt(bb);
+//        int c = Integer.parseInt(cb);
+//        int d = Integer.parseInt(db);
+
+        ab = new String(ab);
+        bb = new String(bb);
+
+        int lenght = ab.length();
+        int lenght2 = bb.length();
+
+        if (ab.equals(bb)) {
+            System.out.println("Имена идентичны");
+        }
+        else if (lenght == lenght2) {
+            System.out.println("Длины имен равны");
+        }
+        else {
+
+        }
+
+
+    }
+
+
+}
