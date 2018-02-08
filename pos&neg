@@ -1,0 +1,44 @@
+import java.io.*;
+
+public class Solution {
+    public static void main(String[] args) throws Exception {
+        //напишите тут ваш код
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+        String ab = reader.readLine();
+        String bb = reader.readLine();
+        String cb = reader.readLine();
+//        String db = reader.readLine();
+
+        int a = Integer.parseInt(ab);
+        int b = Integer.parseInt(bb);
+        int c = Integer.parseInt(cb);
+//        int d = Integer.parseInt(db);
+
+        int countPol = 0;
+        int countNeg = 0;
+
+        if (a >= 1 )
+            countPol++;
+
+        else if (a <=-1)
+            countNeg++;
+
+        if (b >= 1 )
+            countPol++;
+
+        else if (b <=-1)
+            countNeg++;
+
+        if (c >= 1 )
+            countPol++;
+
+        else if (c <= -1)
+            countNeg++;
+
+        System.out.println("количество отрицательных чисел: " + countNeg);
+        System.out.println("количество положительных чисел: " + countPol);
+
+    }
+
+}
